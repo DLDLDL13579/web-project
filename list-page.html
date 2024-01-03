@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宜宾学院网上办事服务大厅</title>
+    <link rel="stylesheet" href="list-styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>宜宾学院网上办事服务大厅</h1>
+    </header>
+
+    <div class="background-options">
+        <label for="background">选择背景颜色：</label>
+        <select id="background">
+            <option value="default">默认</option>
+            <option value="gradient">颜色1</option>
+            <option value="pattern">颜色2</option>
+        </select>
+    </div>
+
+    <div class="filter-section">
+        <label for="category">选择类别：</label>
+        <select id="category">
+            <option value="all">全部</option>
+            <option value="registration">注册服务</option>
+            <option value="servie1">图书馆</option>
+            <option value="servie2">水卡充值</option>
+            <option value="servie3">学工系统</option>
+            <option value="servie4">放假日期查询</option>
+            <!-- 添加更多服务类别 -->
+        </select>
+    </div>
+    <div class="button-container hidden" id="buttonGrid"></div>
+    <div class="cards-container" id="cardsContainer">
+        <!-- 卡片将通过JavaScript动态添加到这里 -->
+    </div>
+
+    <div class="additional-content">
+        <h3>更多信息</h3>
+        <p>欢迎来到我们的服务列表页面。在这里，你可以找到各种办事服务，覆盖你在校园生活中可能需要的方方面面。</p>
+        <p>请随意浏览我们提供的服务，并随时联系我们，如果你有任何疑问或需要帮助。</p>
+        <p>联系方式🛰️:DL445527384</p>
+    </div>
+
+    <script src="list-script.js"></script>
+</body>
+</html>

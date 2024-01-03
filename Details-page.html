@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Details-page.css">
+  <title>我的处分详情</title>
+</head>
+<body>
+  <header>
+    <button id="backButton">返回</button>
+    <h1>我的处分详情</h1>
+  </header>
+  <main>
+    <section id="basicInfo">
+      <h2>基本信息</h2>
+      <div id="employeeName">姓名: 张三儿</div>
+      <div id="employeeID">学号: 12345</div>
+    </section>
+    <section id="disciplinaryDetails">
+      <h2>处分详情</h2>
+      <div id="disciplinaryType">处分类型: 警告</div>
+      <div id="disciplinaryDate">处分日期: 2024-01-01</div>
+      <div id="disciplinaryReason">处分原因: 1.在厕所吃东西  2.喝酒养鱼</div>
+    </section>
+    <section id="relatedFiles">
+      <h2>相关文件</h2>
+      <ul>
+        <li><a href="截屏2024-01-01 20.24.24.png" target="_blank">相关文件1</a></li>
+        <li><a href="file2.doc" target="_blank">相关文件2</a></li>
+      </ul>
+    </section>
+    <section id="commentsSection">
+      <h2>评论</h2>
+      <textarea id="commentInput" placeholder="在这里添加评论..."></textarea>
+      <button id="postCommentButton">发布评论</button>
+      <ul id="commentList"></ul>
+    </section>
+  </main>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>详细评论</h2>
+      <p id="modalComment"></p>
+    </div>
+  </div>
+  <script src="Details-page.js"></script>
+</body>
+</html>

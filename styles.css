@@ -1,0 +1,163 @@
+/* Reset 样式 */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+/* 全局样式 */
+body {
+ font-family: 'Arial', sans-serif;
+}
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: transparent; /* 设置背景颜⾊为透明 */
+}
+.navigation {
+ list-style: none;
+ display: flex;
+}
+.navigation li {
+ margin-right: 20px;
+ cursor: pointer;
+ color: #ffffff; /* 设置⽂字颜⾊ */
+}
+/* 主要内容区样式 */
+.main-content {
+ text-align: center;
+ padding: 50px; /* 主要内容区内边距 */
+ color: white;
+ height: 100vh; /* 100% 视⼝⾼度 */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.dynamic-text {
+ font-size: 13px;
+ font-weight: normal; /* 设置粗细 */
+ margin-top: 0; /* 设置顶部边距 */
+ margin-bottom: 180px; /* 设置底部边距 */
+ white-space: pre;
+}
+.action-button {
+ margin-top: 10px;
+ padding: 10px 40px;
+ font-size: 16px;
+ background: linear-gradient(to top, rgb(71, 85, 86), rgb(26, 141, 137)); /* 渐变型背景⾊ */
+ color: white;
+ text-decoration: none;
+ border-radius: 20px; /* 圆⻆ */
+ transition: background 0.3s ease; /* 背景⾊过渡效果 */
+ box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+ animation: pulse 1s infinite alternate;
+}
+/* 添加阴影效果的过渡 */
+.action-button:hover {
+ box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* 添加阴影效果的过渡 */
+.action-button:active {
+ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* 添加阴影效果的过渡 */
+.action-button:focus {
+ box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+/* ⻚脚样式 */
+footer {
+ background-color: #333;
+ padding: 10px;
+ color: white;
+ text-align: center;
+}
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+ .main-content {
+ padding: 20px; /* 调整内边距 */
+ }
+ .dynamic-text {
+ margin-bottom: 20px; /* 调整底部边距 */
+ }
+ .search-box {
+ position: static;
+ top: auto;
+ left: auto;
+ transform: none;
+ text-align: center;
+ margin-top: 20px; /* 调整顶部边距 */
+ }
+ .custom-image {
+ position: static;
+ top: auto;
+ left: auto;
+ margin: 20px 0; /* 调整外边距 */
+ }
+ .action-button {
+ margin-top: 20px; /* 调整按钮顶部边距 */
+ }
+ .navigation {
+ display: none;
+ flex-direction: column;
+ text-align: center;
+ }
+ .navigation.show {
+ display: flex;
+ }
+ .menu-icon {
+ display: block;
+ }
+}
+/* 动画样式 */
+@keyframes pulse {
+ to {
+ transform: scale(1.1);
+ }
+}
+.search-box input {
+ padding: 3px;
+ border: 0 solid #ffffff; /* 设置边框样式，可以根据需要调整颜⾊ */
+ color: #ffffff; /* 设置⽂字颜⾊ */
+ background-color:transparent; /* 设置透明背景颜⾊ */
+ border-radius: 10px; /* 设置圆⻆ */
+}
+.search-box button {
+ background-color: transparent;
+ color: #393b40; /* 设置按钮⽂字颜⾊，可以根据需要调整颜⾊ */
+ border-radius: 50%; /* 设置为50%，使按钮呈现圆形 */
+ padding: 3px; /* 可以根据需要调整按钮的内边距 */
+}
+/* 修改⻚脚⽂字颜⾊ */
+footer {
+ color: #3498db; /* 设置⽂字颜⾊ */
+}
+/* 调整搜索框的样式 */
+.search-box {
+ position: absolute;
+ top: 6%;
+ left: 85%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+h1 {
+ font-size: 53px; /* 设置字体⼤⼩ */
+ text-align: center; /* 设置⽂本居中 */
+ margin-top: 50px; /* 设置顶部边距 */
+ margin-bottom: 18px; /* 设置底部边距 */
+ font-weight: normal; /* 设置粗细 */
+}
+.custom-image {
+ width: 200px; /* 设置图⽚宽度，可以根据需要调整 */
+ height: auto; /* ⾃适应⾼度，保持原始宽⾼⽐例 */
+ display: block;
+ margin: 20px; /* 设置外边距，可以根据需要调整 */
+ border: 0 solid #ddd;
+ border-radius: 5px; /* 设置圆⻆，可以根据需要调整 */
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 设置轻微阴影效果 */
+ position: absolute;
+ top: 10px; /* 与顶部的距离，可以根据需要调整 */
+ left: 100px; /* 与左侧的距离，可以根据需要调整 */
+}
+
+
